@@ -48,7 +48,7 @@ print("sentences number: ",len(sentences))
 
 # 选取频数大于min_count的单词，其余单词认定为UNK--Unknown,编号为0
 #vocabulary_size = 50000
-min_count = 1
+min_count = 5
 data, count, dictionary, reverse_dictionary = pre.build_dataset(raw_words,sentences,min_count)
 # data list 以单词序号的形式保存语料
 # count list 保存每个词及对应的词频（词频>min_count）
